@@ -40,7 +40,7 @@ matchedPoints2=[matchedPoints2,ones(num1,1)];
 %main steps of RANSAC
 optimalInliers=[];
 for i=1:N
-    %pick 4 pairs randomly
+    %randomly pick 8
     randInds=randi(num1,8,1);
     randPoints1=matchedPoints1(randInds,:);
     randPoints2=matchedPoints2(randInds,:);
